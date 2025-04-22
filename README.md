@@ -31,7 +31,7 @@ LegalEase is a full-stack AI-powered platform that simplifies legal document und
 | **AI Models** | `distilbart-cnn` (summarization), spaCy NER     |
 | **OCR**       | `pytesseract` + `pdf2image`                     |
 
-##Preview 
+## Preview 
 ![image](https://github.com/user-attachments/assets/80a4f67d-3574-4252-a78d-49fb203b5188)
 
 ![image](https://github.com/user-attachments/assets/cdc4aa7a-26a7-43b0-a98b-de980266353e)
