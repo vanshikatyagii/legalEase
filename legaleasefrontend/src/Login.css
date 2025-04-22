@@ -1,0 +1,93 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url("C:\Users\sonia\Desktop\SoftwareProject\legalEase_project\legaleasefrontend\public\backgroun.jpg");
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+    background-size: auto;
+    background-color: #111; /* fallback dark background */
+    height: 100vh;
+    background-attachment: fixed; /* keeps blobs in place on scroll */
+  }
+  
+  .auth-box {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 16px;
+    width: 420px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: #ffffff;
+    backdrop-filter: blur(10px);
+  }
+  
+  .auth-box h2 {
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .auth-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1f2937;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  
+  .auth-box input::placeholder {
+    color: #cccccc;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff5e62;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background: #ff7a80;
+    transform: scale(1.05);
+  }
+  
+  .google-btn {
+    margin-top: 18px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 30px;
+    background: #ffffff;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #333333;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .google-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .google-btn img {
+    width: 20px;
+    height: 20px;
+  }
+  

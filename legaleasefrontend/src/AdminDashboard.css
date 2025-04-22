@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .light-mode {
+    background: #f3f3f3;
+    color: #111;
+  }
+  
+  .dark-mode {
+    background: #1b1b1b;
+    color: #fff;
+  }
+  
+  .admin-wrapper {
+    padding: 2rem;
+  }
+  
+  .dashboard-navbar {
+    background-color: #222;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+  .user-dropdown {
+    position: absolute;
+    top: 3.2rem;
+    right: 20px;
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 160px;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  
+  .dark-mode .user-dropdown .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    color:#000;
+  }
+  
+  .user-dropdown .dropdown-item:hover {
+    background: #f1f1f1;
+  }
+  
+  .graphs-row {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .graph-container {
+    flex: 1;
+    min-width: 300px;
+    background-color: inherit;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #444;
+    transition: background 0.3s ease;
+  }
+  
+  .graph-container.small {
+    max-width: 400px;
+  }
+  .admin-doc-table {
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+  
+  .admin-doc-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: inherit;
+    color: inherit;
+  }
+  
+  .admin-doc-table th,
+  .admin-doc-table td {
+    border: 1px solid #444;
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .admin-doc-table th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .light-mode .admin-doc-table th {
+    background-color: #e4e4e4;
+    color: #111;
+  }
+  .filter-bar {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .filter-bar input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: inherit;
+    color: inherit;
+    outline: none;
+  }
+  
+  .light-mode .filter-bar input {
+    background-color: #fff;
+    color: #111;
+  }
+  
+  .dark-mode .filter-bar input {
+    background-color: #2c2c2c;
+    color: #eee;
+  }
+
+  .dashboard-summary {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .dashboard-summary h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--summary-heading, #fff);
+  }
+  
+  .dashboard-stat {
+    background: var(--stat-bg, #333);
+    border-radius: 12px;
+    padding: 20px 30px;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: background 0.3s ease;
+  }
+  
+  .dashboard-stat span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .dashboard-stat p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  /* Light mode overrides */
+  .light-mode .dashboard-stat {
+    background: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .light-mode .dashboard-summary h4 {
+    color: #333;
+  }
+  .light-mode .dashboard-stat span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .light-mode .user-dropdown .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    color:#000;
+  }
+  
+      

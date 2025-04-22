@@ -1,0 +1,192 @@
+.analytics-wrapper {
+    background-image: url("C:/Users/sonia/Desktop/SoftwareProject/legalEase_project/legaleasefrontend/public/backgroun.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #111;
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .analytics-wrapper h2 {
+    text-align:left;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #b4b7bb;
+  }
+  
+  .analytics-section {
+    margin-bottom: 30px;
+    /* background-color: #1e293b; */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(15, 23, 42, 0.3);
+  }
+  
+  .analytics-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  /* Row layout for graphs */
+  .graphs-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .graph-container {
+    flex: 1 1 45%;
+    max-width: 500px;
+    min-width: 300px;
+    background: transparent;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  /* Light mode support */
+  .dashboard-wrapper.light-mode .analytics-wrapper {
+    background-color: #f5f5f5;
+    color: #1a1a1a;
+    background-image: none;
+  }
+  
+  .dashboard-wrapper.light-mode .analytics-section {
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-wrapper.light-mode .analytics-section h3 {
+    color: #333333;
+  }
+  
+  /* Navbar styles (imported from UserDashboard) */
+  .dashboard-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a2a2a;
+    padding: 10px 20px;
+    color: white;
+    border-bottom: 1px solid #333333;
+  }
+  
+  .dashboard-navbar .navbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-user-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .user-icon {
+    font-size: 1.4rem;
+    margin-right: 6px;
+  }
+  
+  .user-dropdown {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  .user-dropdown .dropdown-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #e2e8f0;
+    text-align: left;
+  }
+  
+  .user-dropdown .dropdown-item:hover {
+    background-color: #334155;
+  }
+  
+  .insights-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .insight-box {
+    background: var(--card-bg, #1e1e1e);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    flex: 1 1 180px;
+    color: white;
+    text-align: center;
+  }
+  
+  .light-mode .insight-box {
+    background: #f1f1f1;
+    color: #111;
+  }
+  .analytics-wrapper {
+    padding: 2rem;
+    max-width: 100%;
+    overflow-x: hidden; /* ✅ Removes unwanted horizontal scroll */
+  }
+  
+  .graphs-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  .graph-container {
+    flex: 1 1 400px;
+    min-width: 300px;
+  }
+  @keyframes fadeSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .insight-box {
+    background: var(--card-bg, #1e1e1e);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    flex: 1 1 180px;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    animation: fadeSlideIn 0.6s ease forwards;
+  }
+  
+  .insight-box:nth-child(1) { animation-delay: 0.1s; }
+  .insight-box:nth-child(2) { animation-delay: 0.2s; }
+  .insight-box:nth-child(3) { animation-delay: 0.3s; }
+  .insight-box:nth-child(4) { animation-delay: 0.4s; }
+  
+  .light-mode .insight-box {
+    background: #f1f1f1;
+    color: #111;
+  }
+  
+  

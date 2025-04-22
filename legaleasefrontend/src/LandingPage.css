@@ -1,0 +1,109 @@
+.landing-container {
+  background-image:url("C:\Users\sonia\Desktop\SoftwareProject\legalEase_project\legaleasefrontend\public\backgroun.jpg");
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  display:flex-box;
+  background-repeat: no-repeat;
+  background-position: center; /*Ensures the whole image fits without cropping or stretching */
+  background-color: #111;   /* fallback color matching the image bg */
+}
+
+/* Hero */
+.hero {
+  margin-top: 100px;
+}
+
+.logo {
+  font-size: 6.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 30px;
+}
+
+.learn-more-btn,
+.try-now-btn {
+  background-color: #ff5e62;
+  color: white;
+  padding: 12px 28px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 20px;
+  width:250px;
+}
+
+.learn-more-btn:hover,
+.try-now-btn:hover {
+  background-color: #ff7a80;
+  transform: scale(1.05);
+}
+
+/* Steps Section */
+.steps-wrapper {
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+.steps-wrapper h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.steps-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.step-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px 20px;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.step-card .icon {
+  font-size: 2.5rem;
+  color: #ff5e62;
+  margin-bottom: 15px;
+}
+
+.step-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+/* Smooth Fade */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0.75;
+    transform: translateY(0);
+  }
+}

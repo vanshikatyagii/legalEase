@@ -1,0 +1,32 @@
+.logout-wrapper {
+    background-image: url("C:/Users/sonia/Desktop/SoftwareProject/legalEase_project/legaleasefrontend/public/backgroun.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #111; /* fallback */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+  
+  .thankyou-message {
+    font-size: 3rem;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+    text-align: center;
+  }
+  
+  .thankyou-message.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .brand {
+    color: #ffff;
+  }
+  
