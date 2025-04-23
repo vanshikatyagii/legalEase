@@ -6,10 +6,10 @@
   font-family: 'Segoe UI', sans-serif;
   display: flex;
   flex-direction: column;
-  padding-bottom: 100px; /* space for chatbox */
-  background-repeat: no-repeat;
-  background-position: center; /*Ensures the whole image fits without cropping or stretching */
-  background-color: #111;   /* fallback color matching the image bg */
+  padding-bottom: 100px; 
+  /* background-repeat: no-repeat; */
+  background-position: center; 
+  background-color: #111;   
   
 }
 
@@ -382,6 +382,12 @@
   width: 220px;         /* Increased width */
   padding: 10px 5px;      /* Optional: extra vertical spacing */
   font-size: 1.5rem;      /* Slightly larger font */
+}
+
+.dashboard-wrapper:not(.light-mode) .user-dropdown {
+  background-color: #2a2a2a !important; /* Match your navbar */
+  color: #f1f5f9;
+  border: 1px solid #333;
 }
 
 .dashboard-wrapper.light-mode .dropdown-item:hover {

@@ -25,7 +25,7 @@ const App = () => {
 
         {/* Protected User Routes */}
         <Route
-          path="/dashboard"
+          path="/user-dashboard"
           element={
             isAuthenticated && role === 'user' ? (
               <UserDashboard />
@@ -35,7 +35,7 @@ const App = () => {
           }
         />
         <Route
-          path="/analytics"
+          path="/user-analytics"
           element={
             isAuthenticated && role === 'user' ? (
               <AnalyticsPage />

@@ -35,7 +35,7 @@ const Login = () => {
       localStorage.setItem('user', JSON.stringify(data));
 
       alert('Google Sign-in successful!');
-      navigate(data.role === 'admin' ? '/admin-dashboard' : '/dashboard');
+      navigate(data.role === 'admin' ? '/admin-dashboard' : '/user-dashboard');
 
     } catch (err) {
       console.error('❌ Google sign-in failed:', err);
@@ -74,7 +74,7 @@ const Login = () => {
       localStorage.setItem('user', JSON.stringify(result));
 
       alert(isSignup ? 'Signup successful!' : 'Login successful!');
-      navigate(result.role === 'admin' ? '/admin-dashboard' : '/dashboard');
+      navigate(result.role === 'admin' ? '/admin-dashboard' : '/user-dashboard');
 
     } catch (err) {
       console.error('❌ Error:', err);
